@@ -1,4 +1,5 @@
 @echo off
+chcp 65001 >nul
 title ClassM End - KooSik-Dev
 
 echo ==============================
@@ -8,8 +9,8 @@ echo ==============================
 echo.
 echo ClassM_Client를 중지하는 중...
 echo.
-echo ※ 이 창을 끄지 마세요.
-echo ※ 종료하는 경우 ClassM Client가 다시 실행됩니다.
+echo [주의] 이 창을 끄지 마세요.
+echo [주의] 종료하는 경우 ClassM Client가 다시 실행됩니다.
 
 :loop
 taskkill /f /im ClassM_Client.exe >nul 2>&1
